@@ -10,8 +10,9 @@
     "build": "rimraf ./lib && babel ./src/app --out-dir lib",
     "clean": "rimraf lib",
     "test": "jest --no-cache",
-    "prepare": "npm run build && npm run build:umd && npm run build:umd:min",
-    "prepublishOnly": "npm run test && npm run build && npm run build:umd && npm run build:umd:min"
+    "prepare": "npm run snyk-protect && npm run build && npm run build:umd && npm run build:umd:min",
+    "prepublishOnly": "npm run test && npm run build && npm run build:umd && npm run build:umd:min",
+    "snyk-protect": "snyk protect"
   },
   "main": "lib/index.js",
   "files": [
@@ -89,9 +90,11 @@
     "redux-slider-monitor": "^2.0.0-0",
     "remotedev-serialize": "^0.1.8",
     "socketcluster-client": "^5.5.0",
-    "styled-components": "^2.0.0"
+    "styled-components": "^2.0.0",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": "^16.0.0"
-  }
+  },
+  "snyk": true
 }
