@@ -4,7 +4,9 @@
   "description": "Counter example for redux",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,8 @@
     "react-hot-loader": "^3.0.0-beta.1",
     "react-redux": "^6.0.0",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
@@ -37,5 +40,6 @@
     "redux-devtools-log-monitor": "^1.0.2",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
-  }
+  },
+  "snyk": true
 }
