@@ -17,7 +17,9 @@
     "start": "node ./bin/redux-devtools.js",
     "start:electron": "node ./bin/redux-devtools.js --open",
     "test": "jest",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -54,11 +56,13 @@
     "semver": "^5.3.0",
     "socketcluster": "^14.3.3",
     "sqlite3": "^4.0.4",
-    "uuid": "^3.0.1"
+    "uuid": "^3.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jest": "^24.1.0",
     "socketcluster-client": "^14.0.0",
     "supertest": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
