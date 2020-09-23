@@ -89,7 +89,7 @@
     "redux-slider-monitor": "^2.0.0-0",
     "remotedev-serialize": "^0.1.8",
     "socketcluster-client": "^5.5.0",
-    "styled-components": "^2.0.0"
+    "styled-components": "^4.0.0"
   },
   "peerDependencies": {
     "react": "^16.0.0"
