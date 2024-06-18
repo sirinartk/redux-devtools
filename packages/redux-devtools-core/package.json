@@ -88,7 +88,7 @@
     "redux-persist": "^4.8.0",
     "redux-slider-monitor": "^2.0.0-0",
     "remotedev-serialize": "^0.1.8",
-    "socketcluster-client": "^5.5.0",
+    "socketcluster-client": "^17.1.0",
     "styled-components": "^2.0.0"
   },
   "peerDependencies": {
