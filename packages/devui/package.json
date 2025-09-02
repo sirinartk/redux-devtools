@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "base16": "^1.0.0",
-    "codemirror": "^5.21.0",
+    "codemirror": "^6.0.0",
     "color": "^2.0.0",
     "prop-types": "^15.6.0",
     "react-icons": "^2.2.7",
